@@ -1,4 +1,5 @@
 import './App.css'
+import { PawPrints } from './components/PawPrints'
 
 // Biscuit Dog Component
 const BiscuitClassic = () => (
@@ -201,6 +202,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-orange-50 to-pink-100 relative overflow-hidden">
+      <PawPrints />
       {/* Static Paw Prints Background */}
       <div className="paw-background-static">
         <div style={{ position: 'absolute', top: '10%', left: '10%' }}><PawPrint size={60} /></div>
@@ -250,14 +252,18 @@ function App() {
           <div className="inline-block mb-4 px-6 py-2 bg-gradient-to-r from-pink-100 to-orange-100 rounded-full border-2 border-pink-200">
             <span className="text-pink-700 font-semibold text-sm">Your Cuddly Pet Paradise 🌸</span>
           </div>
-          <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
-            Collect & Care for <br/>
-            <span className="bg-gradient-to-r from-pink-500 via-orange-400 to-pink-500 bg-clip-text text-transparent">
-              Adorable Critters
-            </span>
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed">
-            AI-powered tracking system made for you and your pets - professional care meets cuddly companionship
+          <div className="relative z-10">
+            <h1 className="text-3xl md:text-5xl font-extrabold mb-4 leading-tight">
+              <span className="bg-gradient-to-r from-pink-500 via-orange-400 to-pink-500 bg-clip-text text-transparent">
+                AI-powered tracking system
+              </span>
+            </h1>
+            <p className="text-xl md:text-2xl font-semibold text-gray-600 mb-2">
+              made for you and your wonderful pets
+            </p>
+          </div>
+          <p className="text-lg md:text-xl text-gray-500 mb-10 max-w-2xl mx-auto">
+            Collect & Care for Adorable Critters
           </p>
           <button 
             onClick={scrollToDownload}
@@ -324,7 +330,7 @@ function App() {
               { icon: <RobotIcon />, title: 'AI Assistant', desc: 'Get smart pet care advice from Biscuit AI' },
               { icon: <CameraIcon />, title: 'Photo Gallery', desc: 'Capture and share your favorite memories' },
               { icon: <EmailIcon />, title: 'Email Reminders', desc: 'Never forget to check on your pets' },
-              { icon: <HomeIcon />, title: 'Pet Maps', desc: 'Design pet maps for your pets convenience' },
+              { icon: <HomeIcon />, title: 'Virtual Homes', desc: 'Design custom habitats for each pet' },
             ].map((feature, i) => (
               <div key={i} className="group bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border-2 border-pink-100 hover:border-orange-200">
                 <div className="flex justify-center mb-4">
@@ -407,25 +413,36 @@ function App() {
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start">
                   <span className="text-orange-500 mr-3 text-xl">★</span>
-                  <span className="text-gray-700"><strong>Unlimited Pet Tracking</strong> - Monitor all your critters</span>
+                  <span className="text-gray-700"><strong>UNLIMITED Pets</strong> - Collect them all!</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-orange-500 mr-3 text-xl">★</span>
-                  <span className="text-gray-700"><strong>Unlimited Virtual AI 24/7 Tracking</strong> - Always connected</span>
+                  <span className="text-gray-700"><strong>Rare & Legendary Pets</strong> - Wizard, Pink Leon, and more</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-orange-500 mr-3 text-xl">★</span>
-                  <span className="text-gray-700"><strong>Unlimited Reminders</strong> - Never miss a moment</span>
+                  <span className="text-gray-700"><strong>All Games Unlocked</strong> - Exclusive mini-games</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-orange-500 mr-3 text-xl">★</span>
+                  <span className="text-gray-700"><strong>Unlimited AI Chats</strong> - 24/7 Biscuit AI support</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-orange-500 mr-3 text-xl">★</span>
+                  <span className="text-gray-700"><strong>Unlimited Photos</strong> - Never run out of space</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-orange-500 mr-3 text-xl">★</span>
+                  <span className="text-gray-700"><strong>Email Reminders</strong> - Stay connected daily</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-orange-500 mr-3 text-xl">★</span>
+                  <span className="text-gray-700"><strong>Custom Virtual Homes</strong> - Decorate pet habitats</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-orange-500 mr-3 text-xl">★</span>
                   <span className="text-gray-700"><strong>Ad-Free Experience</strong> - Pure joy, no interruptions</span>
                 </li>
-                <li className="flex items-start">
-                  <span className="text-orange-500 mr-3 text-xl">★</span>
-                  <span className="text-gray-700"><strong>True Critter Crew Experience</strong> - Full access to everything</span>
-                </li>
-
               </ul>
 
               <button className="w-full bg-gradient-to-r from-orange-500 to-pink-500 text-white py-4 rounded-full font-bold hover:from-orange-600 hover:to-pink-600 transition-all shadow-xl text-lg">

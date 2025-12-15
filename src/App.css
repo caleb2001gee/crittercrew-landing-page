@@ -368,3 +368,60 @@
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
 }
+
+/* Paw print floating animation */
+@keyframes pawFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(12deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(12deg);
+  }
+}
+
+.paw-float {
+  animation: pawFloat 2s ease-in-out infinite;
+}
+
+/* Fallback paw animation if Tailwind doesn't pick it up */
+@keyframes pawAnimation {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  100% {
+    transform: translateY(-110vh) rotate(15deg);
+    opacity: 0;
+  }
+}
+
+.animate-paw {
+  animation: pawAnimation linear infinite;
+}
+
+/* Performance optimizations */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  will-change: scroll-position;
+}
+
+/* Optimize animations for performance */
+.animate-paw {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
