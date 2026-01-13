@@ -404,7 +404,7 @@ function App() {
               <div className="text-center mb-8">
                 <h3 className="text-3xl font-bold text-gray-800 mb-2">Premium</h3>
                 <div className="text-5xl font-extrabold bg-gradient-to-r from-pink-500 to-orange-400 bg-clip-text text-transparent mb-1">
-                  $11.99
+                  $12.99
                 </div>
                 <p className="text-gray-600 mb-4">per month</p>
                 <p className="text-sm text-pink-600 font-semibold">Unlimited pet paradise!</p>
