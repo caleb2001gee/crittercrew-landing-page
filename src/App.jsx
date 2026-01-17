@@ -484,7 +484,7 @@ function App() {
           <div className="flex justify-center space-x-8 text-pink-100 mb-6">
             <a href="/privacy-policy.html" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="/terms-of-service.html" className="hover:text-white transition-colors">Terms of Service</a>
-            <a href="mailto:crittersupport@crittercrewai.com" className="hover:text-white transition-colors">Contact</a>
+            <a href="mailto:support@crittercrewai.com" className="hover:text-white transition-colors">Contact</a>
           </div>
           <p className="text-pink-200">© 2025 Critter Crew AI. All rights reserved.</p>
         </div>
