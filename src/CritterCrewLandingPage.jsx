@@ -234,7 +234,7 @@ function App() {
               <a href="#features" className="text-gray-700 hover:text-orange-500 transition-colors font-medium">Features</a>
               <a href="#pricing" className="text-gray-700 hover:text-pink-600 transition-colors font-medium">Pricing</a>
               <button 
-                onClick={scrollToDownload}
+                onClick={() => window.open("https://apps.apple.com/us/app/critter-crew-ai/id6757675617", "_blank")}
                 className="bg-gradient-to-r from-pink-500 to-orange-400 text-white px-6 py-2.5 rounded-full font-semibold hover:from-pink-600 hover:to-orange-500 transition-all shadow-md hover:shadow-xl"
               >
                 Download
@@ -260,8 +260,8 @@ function App() {
             Adopt cute pets, play fun games, and build your dream animal family with AI-powered care tips
           </p>
           <button 
-            onClick={scrollToDownload}
-            className="bg-gradient-to-r from-pink-500 to-orange-400 text-white px-10 py-4 rounded-full text-lg font-bold hover:from-pink-600 hover:to-orange-500 transition-all shadow-xl hover:shadow-2xl"
+                onClick={() => window.open("https://apps.apple.com/us/app/critter-crew-ai/id6757675617", "_blank")}
+                className="bg-gradient-to-r from-pink-500 to-orange-400 text-white px-10 py-4 rounded-full text-lg font-bold hover:from-pink-600 hover:to-orange-500 transition-all shadow-xl hover:shadow-2xl"
           >
             Start Your Adventure ✨
           </button>
@@ -384,7 +384,7 @@ function App() {
                 </li>
               </ul>
 
-              <button className="w-full bg-gradient-to-r from-pink-500 to-orange-400 text-white py-4 rounded-full font-bold hover:from-pink-600 hover:to-orange-500 transition-all shadow-md">
+              <button onClick={() => window.open("https://apps.apple.com/us/app/critter-crew-ai/id6757675617", "_blank")} className="w-full bg-gradient-to-r from-pink-500 to-orange-400 text-white py-4 rounded-full font-bold hover:from-pink-600 hover:to-orange-500 transition-all shadow-md">
                 Get Started Free
               </button>
             </div>
@@ -439,7 +439,7 @@ function App() {
                 </li>
               </ul>
 
-              <button className="w-full bg-gradient-to-r from-orange-500 to-pink-500 text-white py-4 rounded-full font-bold hover:from-orange-600 hover:to-pink-600 transition-all shadow-xl text-lg">
+              <button onClick={() => window.open("https://apps.apple.com/us/app/critter-crew-ai/id6757675617", "_blank")} className="w-full bg-gradient-to-r from-orange-500 to-pink-500 text-white py-4 rounded-full font-bold hover:from-orange-600 hover:to-pink-600 transition-all shadow-xl text-lg">
                 Go Premium Now! 🎉
               </button>
             </div>
@@ -461,7 +461,7 @@ function App() {
             Download Critter Crew AI and meet your new furry friends!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-pink-600 px-12 py-4 rounded-full text-lg font-bold hover:bg-pink-50 transition-all shadow-xl hover:shadow-2xl">
+            <button onClick={() => window.open("https://apps.apple.com/us/app/critter-crew-ai/id6757675617", "_blank")} className="bg-white text-pink-600 px-12 py-4 rounded-full text-lg font-bold hover:bg-pink-50 transition-all shadow-xl hover:shadow-2xl">
               Download on App Store
             </button>
             <button className="bg-white/20 backdrop-blur-sm text-white px-12 py-4 rounded-full text-lg font-semibold cursor-not-allowed opacity-70 border-2 border-white/30">
