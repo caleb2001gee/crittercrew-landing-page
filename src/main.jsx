@@ -8,3 +8,4 @@ createRoot(document.getElementById('root')).render(
     <App />
   </StrictMode>,
 )
+/* Force rebuild Tue Jan 13 10:28:59 EST 2026 */
