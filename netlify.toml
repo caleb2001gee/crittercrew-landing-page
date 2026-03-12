@@ -3,17 +3,17 @@
   command = "npm run build"
 
 [[redirects]]
-  from = "/eula.html"
+  from = "/eula"
   to = "/eula.html"
   status = 200
 
 [[redirects]]
-  from = "/privacy-policy.html"
+  from = "/privacy"
   to = "/privacy-policy.html"
   status = 200
 
 [[redirects]]
-  from = "/terms-of-service.html"
+  from = "/terms"
   to = "/terms-of-service.html"
   status = 200
 
